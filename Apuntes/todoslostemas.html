@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apuntes Angélica Curso esencial de HTML y CSS</title>
+</head>
+<body>
+  <header>
+    <p>INDICE</p>
+    <nav>
+      <ol>
+        <li>HTML</li>
+        <li>DOM (Documen Object Model)</li>
+        <li>ETIQUETAS Y ATRIBUTOS</li>
+        <li>SEMÁNTICA</li>
+      </ol>
+    </nav>
+  </header>
+  <H1>Curso esencial de HTML y CSS: Apuntes por temas</H1>
+  <hr>
+  <img src="/Apuntes/Imagenes/chica-estudiando.jpg" alt="imagen de una chica estudiando"
+    title="Imagen de una chica estudiando">
+    <h2>1.HTML</h2>
+      <h3>Como iniciar:</h3>
+        <p>Después de abrir Visual Studio Code (VSC) <img src="/images/visual-studio-code.png" alt="Imagen di logo Visual Sudio Code"> tenemos dos formas de iniciar elproyecto: Podemos crear una carpeta dentro en nuestro ordenador y luego arrastrar a VSC; o hacemos click en open folder, Esta carperta va a ser nuestra carpeta raíz. Para crea un archivo nuevo dentro de esta carpeta Ctrl+N.
+        </p>
+        <p>Para empezar a escribir nuestro codigo usamos el comando html:5 (pulsamos TAB). Nos aparecera el codigo. (Mientras no guardemos el archivo VSC pone un icono de circulo, x ya esta guardado).
+          <p>Para abrir el archivo podemos ir a la carpeta y abrir, pero también podemos abrir desde elarchivo con Ctrl l+ Ctrl + o; O con click derecho Open whit live server (esto lo podemos hacer por que teemos el plugging) </p>
+          <p>Para finalizar Guardamos en Github</p>
+        </p>
+    <h2>2.DOM (Documen Object Model)</h2>
+        <p>Estructura de árbol que representa todos nuestros proyectos en la web.Tendrá HEAD y BODY. Lo que no quiere decir esta represnetación es que en HTML un elemento va siempre dentro de otro (hay que saber siempre quien es el padre, indentación. Cada que hay un elemento dentro de otro, cuando tiene padre, hay que indentar un punto delante o un punto atras que es darle una separación, esto se hace con el tab )</p>
+    <h2>3.ETIQUETAS Y ATRIBUTOS</h2>
+      <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene
+      características y usos diferentes aunque visualmente den un resultado similar. Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el
+      navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos
+      funcionan en solo alguna etiquetas como ‘src’</p>
+        <h3>a. Etiquetas</h3>
+        <p>La estructura de las etiquetas siempre tiene una apretura <(nombre de la etiqueta)> luego el contenido y por ultimo el cierre < / nombre de la etiqueta >  </p>
+        <p>No todas las etiquetas necesitan abrirse y cerrarse 8por ejemplo img, se cierra en ella misma, no tiene ningun contenido, pero aún así el navegador la entiende.  ) </p>
+        <P>- h1: Representa el mensaje más importante del website (nombre base). Hay mas etiquetas de h, Heading o cabecera, van desde la h1 hasta la h6.  </P>
+        <p>- p: Con ella separaremos los párrafos</p>
+        <p>- a: inserta un enlace. Debemos especificar el nombre. Si queremos que al hacer click en enlace se abra una pestaña nueva, lo haremos a través del atributo TARGET.</p>
+        <p>- hr: representa un cambio de tema entre párrafos. Visualmente es una linea </p>
+        <p>- div: Sirve para crear secciones o agrupar contenidos. No se debe usar sin sentido, es simplemente un grupo de elementos, pero no aporta información desde el punto de vista de la aacesibilidad o los motores de busqueda. </p>
+      <p> - nav: Es una etiqueta semántica que le dice a mi navegador que una lista es un menú de navegación. Visualmente no hay nada, pero en cuanto a accesibilidad da mas información.</p>
+        <p>header:los headers suelen ir en la parte superior del diseño, pero no es necesarioq ue siempre sea así. Es la navegación pincipal del tu contenido, la cabecera.  </p>
+        <h3>b. Atributos</h3>
+        <p>Como hemos dicho antes, los atributos dan las caracteristicar a las etiquetas.
+        </p>
+        <p>Ej: etiqueta IMG (si presiono tab,automaticamente el entorno nos autocompleta con 2 atributos esta etiqueta), src: ponemos la URL de fuente de donde estan mis archivos (nos da la ubicación de la imagen), Alt: Muy importante , es un atributo de accesibilidad cuando la imagen no ha cargado. Tiene que ser una descripción importante de la imagen. Title: Si dejamos el mouse unos segundos sobre la imagen, nos aparecera su nombre.Es recomendable poner siempre atl y title.
+        </p>
+    <h2>4. SEMÁNTICA</h2>
+        <p>La semántica le brinda sentido a cada elemento existente en un sitio web, algunos elementos será meramente decorativos y no deben
+        significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más relevantes
+        que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido, categorizar y
+        será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a la
+        accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido. Una de las cosas mas importantes en la accesibilidad es tener una BUENA SEMÁNTICA. </p>
+        <p>Hay un monton de etiquetas y cada una de ellas tiene su uso. Una web recomendada es
+        <a href="https://developer.mozilla.org/es/" target="_blank">Developer Mozzilla</a>, aquí nos aparecen las etiquetas y su descipción.
+        </p>
+    <h2>Shortcuts</h2>
+        <p>Ctrl+n: Nuevo archivo</p>
+        <p>cttl+shift+d: multiplica las lineas de texto seleccionadas</p>
+    <h2>QUE ES CSS?</h2>
+
+</body>
+</html>
