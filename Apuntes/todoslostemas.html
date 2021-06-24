@@ -15,6 +15,7 @@
         <li>DOM (Documen Object Model)</li>
         <li>ETIQUETAS Y ATRIBUTOS</li>
         <li>SEMÁNTICA</li>
+        <li>QUE ES CSS?</li>
       </ol>
     </nav>
   </header>
@@ -42,11 +43,13 @@
         <p>No todas las etiquetas necesitan abrirse y cerrarse 8por ejemplo img, se cierra en ella misma, no tiene ningun contenido, pero aún así el navegador la entiende.  ) </p>
         <P>- h1: Representa el mensaje más importante del website (nombre base). Hay mas etiquetas de h, Heading o cabecera, van desde la h1 hasta la h6.  </P>
         <p>- p: Con ella separaremos los párrafos</p>
-        <p>- a: inserta un enlace. Debemos especificar el nombre. Si queremos que al hacer click en enlace se abra una pestaña nueva, lo haremos a través del atributo TARGET.</p>
+        <p>- a: inserta un enlace. Debemos especificar el nombre (contenido). Si queremos que al hacer click en enlace se abra una pestaña nueva, lo haremos a través del atributo TARGET. tambien puedo crear en mis menus de navegación ENLACES INTERNOS. Primero creamos nuestra etiqueta de ancla (a) y para vincular a un elemto por dentri tengoo que poner # y luego tengo que hacerle referencia a un elempto con id (cualquier etiqueta puede tener un id, es un atributo, pero cada id tiene que ser unico por pagina ej: google chromr, solo puede existir uno por pagina, tendriamos que cambiar el nombre al segundo) </p>
+        <p>También podemos insertar un mail que vinvule un correo electronico para que nos escriban drectamente. Siempre entre comillas ej: a.href="mailto:correoelectronico"</p>
         <p>- hr: representa un cambio de tema entre párrafos. Visualmente es una linea </p>
         <p>- div: Sirve para crear secciones o agrupar contenidos. No se debe usar sin sentido, es simplemente un grupo de elementos, pero no aporta información desde el punto de vista de la aacesibilidad o los motores de busqueda. </p>
-      <p> - nav: Es una etiqueta semántica que le dice a mi navegador que una lista es un menú de navegación. Visualmente no hay nada, pero en cuanto a accesibilidad da mas información.</p>
-        <p>header:los headers suelen ir en la parte superior del diseño, pero no es necesarioq ue siempre sea así. Es la navegación pincipal del tu contenido, la cabecera.  </p>
+        <p>- nav: Es una etiqueta semántica que le dice a mi navegador que una lista es un menú de navegación. Visualmente no hay nada, pero en cuanto a accesibilidad da mas información.</p>
+        <p>- header:los headers suelen ir en la parte superior del diseño, pero no es necesarioq ue siempre sea así. Es la navegación pincipal del tu contenido, la cabecera.  </p>
+        <p>- details y summary: Son etiquetas que siempre deben ir una dentro de la otra. summary nos da el nombre que acompaña a la flecha el menu desplegable (va siempre dentro de details) y dentro de details pondremos la lista. open es un atributo para agregar a details, para que el menu este abuerto por defecto</p>
         <h3>b. Atributos</h3>
         <p>Como hemos dicho antes, los atributos dan las caracteristicar a las etiquetas.
         </p>
@@ -61,10 +64,28 @@
         <p>Hay un monton de etiquetas y cada una de ellas tiene su uso. Una web recomendada es
         <a href="https://developer.mozilla.org/es/" target="_blank">Developer Mozzilla</a>, aquí nos aparecen las etiquetas y su descipción.
         </p>
+<hr>
+<h3>CONTENT-COMPONENT-LAYOUT</h3>
+<P>- Contenido: cada uno de los elementos de la pagina (los detalles, ej: una imagen, un boton, un texto)</P>
+<p>- Componente: Es un conjunto de elementos, ej: un menu, una lista. </p>
+<p>- Layout: es la interfaz. un conjunto de componentes</p>
+<h3>DISPLAY /FLUJO /LINEA Y BLOQUE</h3>
+<P>- Display: la propiedad CSS display (display:) especifica si un elemento es tratado como block (espera ocupar todo el
+  espacio de su linea) o inline elelement (ej: img, solo ocupa s espacio fisica en la linea. Si pongo una imagen y
+  enseguida en la linea otra, se pondran una al lado de la otra.) y el diseño usado por sus hijos, como flor layut
+  (diseño de flujo ) flex (flexible) o grid (cuadricula). </P>
+<p>- Flow: Es el flujo ntural de nuestro navegador. obedece a la configuración del witing-mode y direction, ambas sn
+  propiedades de CSS con un valor por defect. El writing mode es Horizontal-tb: Se lee en horizontal (algunos idiomes se
+  escriben y leen en vertical) y "t"-"b" significa top-bottom de arriba hacia abajo. Direction: ltr, ltr significa left
+  to right (de derecha a izquierda, el arabe por ejemplo, seria de izq a der.) </p>
+
     <h2>Shortcuts</h2>
         <p>Ctrl+n: Nuevo archivo</p>
         <p>cttl+shift+d: multiplica las lineas de texto seleccionadas</p>
-    <h2>QUE ES CSS?</h2>
+        <p>lorem. Te genera automaticamente un texto de prueba (usado por antiguos programadores)</p>
+
+    <hr>
+        <h2>5. QUE ES CSS?</h2>
 
 </body>
 </html>
