@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
   <title>El Blog de Angélica</title>
 </head>
 <body>
@@ -41,12 +42,36 @@
         Conceptos esenciales del Desarrollo Web
       </summary>
       <ol>
-        <li>Qué es HTML</li>
-        <li>Etiquetas</li>
-        <li>DOM</li>
-        <li>Semántica</li>
-        <li>AtributosL</li>
-        <li>Qué es CSS</li>
+        <li>
+          <a href="#html">
+            Qué es HTML
+          </a>
+        </li>
+        <li>
+          <a href="#etiquetas">
+            Etiquetas
+          </a>
+        </li>
+        <li>
+          <a href="#dom">
+            DOM
+          </a>
+        </li>
+        <li>
+          <a href="#semantica">
+            Semántica
+          </a>
+        </li>
+        <li>
+          <a href="#atributos">
+            AtributosL
+          </a>
+        </li>
+        <li>
+          <a href="#css">
+            Qué es CSS
+          </a>
+        </li>
       </ol>
     </details>
 
@@ -84,21 +109,36 @@
     manera privada, Github será esencial para almacenar tu futuro portafolio.</p>
   <hr>
   <h2>Conceptos esenciales del Desarrollo Web</h2>
-    <h3>Qué es HTML</h3>
+    <h3 id="html">Qué es HTML</h3>
     <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado
-    y la estructura del contenido.</p>
-    <h3>Etiquetas</h3>
+    y la estructura del contenido.<code>const name="your name"</code> </p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <h3 id="etiquetas">Etiquetas</h3>
     <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene características y usos diferentes aunque visualmente den un resultado similar.</p>
     <p>Muchas etiquetas son fácil de diferencias como los headings o las imágenes y otras diferentes como header, footer,
     section o div, aquí es donde la semántica será la respuesta y si sabemos un poco de inglés también podremos darnos una
     pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como
     Software Developer.</p>
-    <h3>DOM</h3>
+    <h3 id="dom">DOM</h3>
     <p>El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol
     genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar
     dependencias, herencias en css y que tan complejo es nuestro proyecto.</p>
     <img src="images/dom.png" alt="Estuctura de árbol que representa al Documen Objet Model">
-    <h3>Semántica</h3>
+    <h3 id="semantica">Semántica</h3>
     <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos
       y
       no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más
@@ -106,11 +146,11 @@
       categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará
       a
       la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.</p>
-    <h3>Atributos</h3>
+    <h3 id="atributos">Atributos</h3>
     <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el
       navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos
       funcionan en solo alguna etiquetas como src</p>
-    <h3>CSS</h3>
+    <h3 id="css">CSS</h3>
     <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para
       describir
       la presentación de documentos HTML</p>

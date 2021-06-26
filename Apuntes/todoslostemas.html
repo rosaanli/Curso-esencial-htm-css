@@ -6,16 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apuntes Angélica Curso esencial de HTML y CSS</title>
 </head>
-<body>
+<body style="background: whitesmoke; color: black; font-family: Georgia, 'Times New Roman', Times, serif;>
   <header>
     <p>INDICE</p>
     <nav>
       <ol>
-        <li>HTML</li>
-        <li>DOM (Documen Object Model)</li>
-        <li>ETIQUETAS Y ATRIBUTOS</li>
-        <li>SEMÁNTICA</li>
-        <li>QUE ES CSS?</li>
+        <li>
+          <a href="#html">
+            HTML
+          </a>
+        </li>
+        <li>
+          <a href="#dom">
+            DOM (Documen Object Model)
+          </a>
+        </li>
+        <li>
+          <a href="#eya">
+            ETIQUETAS Y ATRIBUTOS
+          </a>
+        </li>
+        <li>
+          <a href="#semantica">
+            SEMÁNTICA
+          </a>
+        </li>
+        <li>
+
+          <a href="#css">
+            QUE ES CSS?
+          </a>
+        </li>
       </ol>
     </nav>
   </header>
@@ -23,7 +44,7 @@
   <hr>
   <img src="/Apuntes/Imagenes/chica-estudiando.jpg" alt="imagen de una chica estudiando"
     title="Imagen de una chica estudiando">
-    <h2>1.HTML</h2>
+    <h2 id="html">1.HTML</h2>
       <h3>Como iniciar:</h3>
         <p>Después de abrir Visual Studio Code (VSC) <img src="/images/visual-studio-code.png" alt="Imagen di logo Visual Sudio Code"> tenemos dos formas de iniciar elproyecto: Podemos crear una carpeta dentro en nuestro ordenador y luego arrastrar a VSC; o hacemos click en open folder, Esta carperta va a ser nuestra carpeta raíz. Para crea un archivo nuevo dentro de esta carpeta Ctrl+N.
         </p>
@@ -31,31 +52,35 @@
           <p>Para abrir el archivo podemos ir a la carpeta y abrir, pero también podemos abrir desde elarchivo con Ctrl l+ Ctrl + o; O con click derecho Open whit live server (esto lo podemos hacer por que teemos el plugging) </p>
           <p>Para finalizar Guardamos en Github</p>
         </p>
-    <h2>2.DOM (Documen Object Model)</h2>
+    <h2 id="dom">2.DOM (Documen Object Model)</h2>
         <p>Estructura de árbol que representa todos nuestros proyectos en la web.Tendrá HEAD y BODY. Lo que no quiere decir esta represnetación es que en HTML un elemento va siempre dentro de otro (hay que saber siempre quien es el padre, indentación. Cada que hay un elemento dentro de otro, cuando tiene padre, hay que indentar un punto delante o un punto atras que es darle una separación, esto se hace con el tab )</p>
-    <h2>3.ETIQUETAS Y ATRIBUTOS</h2>
+    <h2 id="eya">3.ETIQUETAS Y ATRIBUTOS</h2>
       <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene
       características y usos diferentes aunque visualmente den un resultado similar. Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el
       navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos
       funcionan en solo alguna etiquetas como ‘src’</p>
         <h3>a. Etiquetas</h3>
-        <p>La estructura de las etiquetas siempre tiene una apretura <(nombre de la etiqueta)> luego el contenido y por ultimo el cierre < / nombre de la etiqueta >  </p>
-        <p>No todas las etiquetas necesitan abrirse y cerrarse 8por ejemplo img, se cierra en ella misma, no tiene ningun contenido, pero aún así el navegador la entiende.  ) </p>
-        <P>- h1: Representa el mensaje más importante del website (nombre base). Hay mas etiquetas de h, Heading o cabecera, van desde la h1 hasta la h6.  </P>
-        <p>- p: Con ella separaremos los párrafos</p>
-        <p>- a: inserta un enlace. Debemos especificar el nombre (contenido). Si queremos que al hacer click en enlace se abra una pestaña nueva, lo haremos a través del atributo TARGET. tambien puedo crear en mis menus de navegación ENLACES INTERNOS. Primero creamos nuestra etiqueta de ancla (a) y para vincular a un elemto por dentri tengoo que poner # y luego tengo que hacerle referencia a un elempto con id (cualquier etiqueta puede tener un id, es un atributo, pero cada id tiene que ser unico por pagina ej: google chromr, solo puede existir uno por pagina, tendriamos que cambiar el nombre al segundo) </p>
-        <p>También podemos insertar un mail que vinvule un correo electronico para que nos escriban drectamente. Siempre entre comillas ej: a.href="mailto:correoelectronico"</p>
-        <p>- hr: representa un cambio de tema entre párrafos. Visualmente es una linea </p>
-        <p>- div: Sirve para crear secciones o agrupar contenidos. No se debe usar sin sentido, es simplemente un grupo de elementos, pero no aporta información desde el punto de vista de la aacesibilidad o los motores de busqueda. </p>
-        <p>- nav: Es una etiqueta semántica que le dice a mi navegador que una lista es un menú de navegación. Visualmente no hay nada, pero en cuanto a accesibilidad da mas información.</p>
-        <p>- header:los headers suelen ir en la parte superior del diseño, pero no es necesarioq ue siempre sea así. Es la navegación pincipal del tu contenido, la cabecera.  </p>
-        <p>- details y summary: Son etiquetas que siempre deben ir una dentro de la otra. summary nos da el nombre que acompaña a la flecha el menu desplegable (va siempre dentro de details) y dentro de details pondremos la lista. open es un atributo para agregar a details, para que el menu este abuerto por defecto</p>
-        <h3>b. Atributos</h3>
-        <p>Como hemos dicho antes, los atributos dan las caracteristicar a las etiquetas.
+            <p>La estructura de las etiquetas siempre tiene una apretura <(nombre de la etiqueta)> luego el contenido y por ultimo el cierre < / nombre de la etiqueta >  </p>
+            <p>No todas las etiquetas necesitan abrirse y cerrarse 8por ejemplo img, se cierra en ella misma, no tiene ningun contenido, pero aún así el navegador la entiende.  ) </p>
+            <P>- h1: Representa el mensaje más importante del website (nombre base). Hay mas etiquetas de h, Heading o cabecera, van desde la h1 hasta la h6.  </P>
+            <p>- p: Con ella separaremos los párrafos</p>
+            <p>- a: inserta un enlace. Debemos especificar el nombre (contenido). Si queremos que al hacer click en el enlace se abra una pestaña nueva, lo haremos a través del atributo TARGET. tambien puedo crear en mis menus de navegación ENLACES INTERNOS. Primero creamos nuestra etiqueta de ancla (a) y para vincular a un elemento dentro de la pagina tengo que poner # y luego tengo que hacerle referencia a un elemento con id (cualquier etiqueta puede tener un id, es un atributo, pero cada id tiene que ser unico por pagina ej: google chromr, solo puede existir uno por pagina, tendriamos que cambiar el nombre al segundo) </p>
+            <p>También podemos insertar un mail que vinvule un correo electronico para que nos escriban drectamente. Siempre entre comillas ej: a.href="mailto:correoelectronico"</p>
+            <p>- hr: representa un cambio de tema entre párrafos. Visualmente es una linea </p>
+            <p>- div: Sirve para crear secciones o agrupar contenidos. No se debe usar sin sentido, es simplemente un grupo de elementos, pero no aporta información desde el punto de vista de la aacesibilidad o los motores de busqueda. </p>
+            <p>- nav: Es una etiqueta semántica que le dice a mi navegador que una lista es un menú de navegación. Visualmente no hay nada, pero en cuanto a accesibilidad da mas información.</p>
+            <p>- header:los headers suelen ir en la parte superior del diseño, pero no es necesarioq ue siempre sea así. Es la navegación pincipal del tu contenido, la cabecera.  </p>
+            <p>- details y summary: Son etiquetas que siempre deben ir una dentro de la otra. summary nos da el nombre que acompaña a la flecha el menu desplegable (va siempre dentro de details) y dentro de details pondremos la lista. open es un atributo para agregar a details, para que el menu este abuerto por defecto</p>
+            <p>- Existen dos etiquetas para poner codigo: </p>
+              <p>code: Se suele utilizar para introducir una porcion de  codigo pequeña dentro de un parrafo (dentro de la etiueta parrafo), hace una señalizacion en linea. Es una etiqueta con función más semántica que visual.</p>
+              <p>pre: Se utiliza para escribir codigo en bloque que ocupe toda el area (todo el ancho o espacio) disponible. Es conveniente cuando queremos escribir una porcion grande de codigo. Lo primero que hace pre es tomar todos los espacios que tenemos hasta la indentación. si queremos que el codigo este totalmente alibneado a la izquierda, quitariamos esos espacios. Esta etiqueta esta hhecha para que pongamos pedazos de codigo, para hacer esto existen las entidades html donde puedo representar ciertos caracteres, para que representen otras cosas, pero en texto. Los guiente es hacer un proceso llamado "escapar del codigo". Para hacerlo mas rapido podemos utilizar la pagina <a href="https://www.freeformatter.com/html-escape.html" target="_blank"> freeformatter</a> </p>
+            <p>- link: </p>
+              <h3>b. Atributos</h3>
+        <p>Como hemos dicho antes, los atributos dan las caracteristicar a las etiquetas. Van acompañados de = y "".
         </p>
         <p>Ej: etiqueta IMG (si presiono tab,automaticamente el entorno nos autocompleta con 2 atributos esta etiqueta), src: ponemos la URL de fuente de donde estan mis archivos (nos da la ubicación de la imagen), Alt: Muy importante , es un atributo de accesibilidad cuando la imagen no ha cargado. Tiene que ser una descripción importante de la imagen. Title: Si dejamos el mouse unos segundos sobre la imagen, nos aparecera su nombre.Es recomendable poner siempre atl y title.
         </p>
-    <h2>4. SEMÁNTICA</h2>
+    <h2 id="semantica">4. SEMÁNTICA</h2>
         <p>La semántica le brinda sentido a cada elemento existente en un sitio web, algunos elementos será meramente decorativos y no deben
         significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más relevantes
         que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido, categorizar y
@@ -65,27 +90,56 @@
         <a href="https://developer.mozilla.org/es/" target="_blank">Developer Mozzilla</a>, aquí nos aparecen las etiquetas y su descipción.
         </p>
 <hr>
-<h3>CONTENT-COMPONENT-LAYOUT</h3>
-<P>- Contenido: cada uno de los elementos de la pagina (los detalles, ej: una imagen, un boton, un texto)</P>
-<p>- Componente: Es un conjunto de elementos, ej: un menu, una lista. </p>
-<p>- Layout: es la interfaz. un conjunto de componentes</p>
-<h3>DISPLAY /FLUJO /LINEA Y BLOQUE</h3>
-<P>- Display: la propiedad CSS display (display:) especifica si un elemento es tratado como block (espera ocupar todo el
-  espacio de su linea) o inline elelement (ej: img, solo ocupa s espacio fisica en la linea. Si pongo una imagen y
-  enseguida en la linea otra, se pondran una al lado de la otra.) y el diseño usado por sus hijos, como flor layut
-  (diseño de flujo ) flex (flexible) o grid (cuadricula). </P>
-<p>- Flow: Es el flujo ntural de nuestro navegador. obedece a la configuración del witing-mode y direction, ambas sn
-  propiedades de CSS con un valor por defect. El writing mode es Horizontal-tb: Se lee en horizontal (algunos idiomes se
-  escriben y leen en vertical) y "t"-"b" significa top-bottom de arriba hacia abajo. Direction: ltr, ltr significa left
-  to right (de derecha a izquierda, el arabe por ejemplo, seria de izq a der.) </p>
+        <h3>CONTENT-COMPONENT-LAYOUT</h3>
+          <P>- Contenido: cada uno de los elementos de la pagina (los detalles, ej: una imagen, un boton, un texto)</P>
+          <p>- Componente: Es un conjunto de elementos, ej: un menu, una lista. </p>
+          <p>- Layout: es la interfaz. un conjunto de componentes</p>
+        <h3>DISPLAY /FLUJO /LINEA Y BLOQUE</h3>
+          <P>- Display: la propiedad CSS display (display:) especifica si un elemento es tratado como block (espera ocupar todo el
+            espacio de su linea) o inline elelement (ej: img, solo ocupa s espacio fisica en la linea. Si pongo una imagen y
+            enseguida en la linea otra, se pondran una al lado de la otra.) y el diseño usado por sus hijos, como flor layut
+            (diseño de flujo ) flex (flexible) o grid (cuadricula). </P>
+          <p>- Flow: Es el flujo ntural de nuestro navegador. obedece a la configuración del witing-mode y direction, ambas sn
+            propiedades de CSS con un valor por defect. El writing mode es Horizontal-tb: Se lee en horizontal (algunos idiomes se
+            escriben y leen en vertical) y "t"-"b" significa top-bottom de arriba hacia abajo. Direction: ltr, ltr significa left
+            to right (de derecha a izquierda, el arabe por ejemplo, seria de izq a der.) </p>
 
-    <h2>Shortcuts</h2>
-        <p>Ctrl+n: Nuevo archivo</p>
-        <p>cttl+shift+d: multiplica las lineas de texto seleccionadas</p>
-        <p>lorem. Te genera automaticamente un texto de prueba (usado por antiguos programadores)</p>
+            <p>Existen dos etiquetas para añadir codigo a una pagina</p>
 
-    <hr>
-        <h2>5. QUE ES CSS?</h2>
+       <h3>Shortcuts</h3>
+           <p>Ctrl+n: Nuevo archivo</p>
+           <p>cttl+shift+d: multiplica las lineas de texto seleccionadas</p>
+           <p>lorem. Te genera automaticamente un texto de prueba (usado por antiguos programadores)</p>
+           <p>alt+tabulador: eñimina los espacios y mueve el texto hacia la izquierda</p>
+         <hr>
+    <h2 id="css">5. QUE ES CSS?</h2>
+        <p>CSS Cascading Style Sheets es el lenguaje de estilos utilizado para describir la presentacion de documentos HTML. Podemos incluir CSS u hojas de estilo en HTML de  formas: </p>
+            <p>- Como atributo: style</p>
+            <p>- Como etiqueta: style. Puede ir en head o en cualquier parte. </p>
+            <p>- Mediante archivo externo: mediante la etiqueta "link" podemos enlazar un archivo de hojas de estilo externo. Lo hacemos para no mezclar CSS y html y no hacer mas dificil la busqueda dentro de html. </p>
+            <p> dentro de VSC creamos una nueva hoja (ctrl+n) y la guardamos (se puede usar cualquien nombre, en mi caso styles.css) pero es importante que la extención del nombre siempre sea .css</p>
+            <p>Reglas de CSS: </p>
+            <p>Una regla es la forma en la que se estructura para poner un tipo de estilo. Se compone de un selector (o varios
+            separados por ,), una propiedad (o varias) y un valor.</p>
+      <h3>Selectores</h3>
+      <p>Los selectores definen sobre que conjunto de elementos se aplicará un conjunto de reglas CSS</p>
+          <h4>Basicos: </h4>
+            <p>- *global: selectores universales o globales (l). Afecta a todos los elementos</p>
+            <p>- De Etiquetas: Hacen referencia a todoslos elementos HTML qur coincidan. Se escrbe igual que una etiqueta sin el <>. Si lo utilizamos como atributo, solo le va a dar estilo a ese tag o elemento </p>
+            <p>- .clase: Las clases se pueden repetir y un elemento puede tener mas de una clase. puedes poner cuantas clases quieras a un elemnento HTML. </p>
+            <p>- # id: Solo un elemento puede tener el mismo id en una pagina. Un elemento de id se identifica con #</p>
+            <p>- [atributo]: Todos los eleentos que contengan el atributo o valor  de atributo en cuestión. Se utiliza cuando ya no existe un forma mas sencilla de hacer un selector </p>
+            <p>- de grupo: N selectores se pueden configurar con las mismas propiedades. Podemos darle estilo a mas de un elemento con la misma regla.</p>
+          <h4>Combinados: Con estos selectores podemos ser mas especificos con respecto a los elementos con los que estamos buscando para darles algún tipo de estilo diferente. son descendentes.</h4>
+            <p>- descendente: más específico. </p>
+            <p>- >Hijo directo: Los hijos directos del selector previo a > . Le voy a dar estilo solamanete al primer que yo defina y que cumpla con determinadas condiciones. </p>
+            <p>- ~hermano: Es para los elemtos en el mismo nivel. Es decir para el elemento que esta al costado del otro. ej: <code>h1~h2{color: red}</code> todos los h2 hermanos del h1. </p>
+            <p>- +adyacente: Como el hermano, pero solo el mas cercano. </p>
+          <h4>Pseudoselectores: Son estados que solo pueden pasarle a un elemento. </h4>
+            <p>- :Pseudoclase:Representan estados en un elemnto. Ej: cambiar de color un link ya visitado o pcambiar de color al pasar el mouse encima de un link. </p>
+            <p>- ::pseudoelemento: Crean elemntos especiales que no se pueden crear con HTML, agraga algo de contenido. </p>
+
+
 
 </body>
 </html>
