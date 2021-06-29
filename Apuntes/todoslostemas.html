@@ -52,14 +52,14 @@
           <p>Para abrir el archivo podemos ir a la carpeta y abrir, pero también podemos abrir desde elarchivo con Ctrl l+ Ctrl + o; O con click derecho Open whit live server (esto lo podemos hacer por que teemos el plugging) </p>
           <p>Para finalizar Guardamos en Github</p>
         </p>
-    <h2 id="dom">2.DOM (Documen Object Model)</h2>
+    <h3 id="dom">2.DOM (Documen Object Model)</h3>
         <p>Estructura de árbol que representa todos nuestros proyectos en la web.Tendrá HEAD y BODY. Lo que no quiere decir esta represnetación es que en HTML un elemento va siempre dentro de otro (hay que saber siempre quien es el padre, indentación. Cada que hay un elemento dentro de otro, cuando tiene padre, hay que indentar un punto delante o un punto atras que es darle una separación, esto se hace con el tab )</p>
-    <h2 id="eya">3.ETIQUETAS Y ATRIBUTOS</h2>
+    <h3 id="eya">3.ETIQUETAS Y ATRIBUTOS</h3>
       <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene
       características y usos diferentes aunque visualmente den un resultado similar. Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el
       navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos
       funcionan en solo alguna etiquetas como ‘src’</p>
-        <h3>a. Etiquetas</h3>
+        <h4>a. Etiquetas</h4>
             <p>La estructura de las etiquetas siempre tiene una apretura <(nombre de la etiqueta)> luego el contenido y por ultimo el cierre < / nombre de la etiqueta >  </p>
             <p>No todas las etiquetas necesitan abrirse y cerrarse 8por ejemplo img, se cierra en ella misma, no tiene ningun contenido, pero aún así el navegador la entiende.  ) </p>
             <P>- h1: Representa el mensaje más importante del website (nombre base). Hay mas etiquetas de h, Heading o cabecera, van desde la h1 hasta la h6.  </P>
@@ -75,12 +75,12 @@
               <p>code: Se suele utilizar para introducir una porcion de  codigo pequeña dentro de un parrafo (dentro de la etiueta parrafo), hace una señalizacion en linea. Es una etiqueta con función más semántica que visual.</p>
               <p>pre: Se utiliza para escribir codigo en bloque que ocupe toda el area (todo el ancho o espacio) disponible. Es conveniente cuando queremos escribir una porcion grande de codigo. Lo primero que hace pre es tomar todos los espacios que tenemos hasta la indentación. si queremos que el codigo este totalmente alibneado a la izquierda, quitariamos esos espacios. Esta etiqueta esta hhecha para que pongamos pedazos de codigo, para hacer esto existen las entidades html donde puedo representar ciertos caracteres, para que representen otras cosas, pero en texto. Los guiente es hacer un proceso llamado "escapar del codigo". Para hacerlo mas rapido podemos utilizar la pagina <a href="https://www.freeformatter.com/html-escape.html" target="_blank"> freeformatter</a> </p>
             <p>- link: </p>
-              <h3>b. Atributos</h3>
+              <h4>b. Atributos</h4>
         <p>Como hemos dicho antes, los atributos dan las caracteristicar a las etiquetas. Van acompañados de = y "".
         </p>
         <p>Ej: etiqueta IMG (si presiono tab,automaticamente el entorno nos autocompleta con 2 atributos esta etiqueta), src: ponemos la URL de fuente de donde estan mis archivos (nos da la ubicación de la imagen), Alt: Muy importante , es un atributo de accesibilidad cuando la imagen no ha cargado. Tiene que ser una descripción importante de la imagen. Title: Si dejamos el mouse unos segundos sobre la imagen, nos aparecera su nombre.Es recomendable poner siempre atl y title.
         </p>
-    <h2 id="semantica">4. SEMÁNTICA</h2>
+    <h3 id="semantica">4. SEMÁNTICA</h3>
         <p>La semántica le brinda sentido a cada elemento existente en un sitio web, algunos elementos será meramente decorativos y no deben
         significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más relevantes
         que otras, esto ayudará a los motores de búsqueda como Google o Duck Duck Go a diferenciar tu contenido, categorizar y
@@ -89,28 +89,13 @@
         <p>Hay un monton de etiquetas y cada una de ellas tiene su uso. Una web recomendada es
         <a href="https://developer.mozilla.org/es/" target="_blank">Developer Mozzilla</a>, aquí nos aparecen las etiquetas y su descipción.
         </p>
-<hr>
-        <h3>CONTENT-COMPONENT-LAYOUT</h3>
-          <P>- Contenido: cada uno de los elementos de la pagina (los detalles, ej: una imagen, un boton, un texto)</P>
-          <p>- Componente: Es un conjunto de elementos, ej: un menu, una lista. </p>
-          <p>- Layout: es la interfaz. un conjunto de componentes</p>
-        <h3>DISPLAY /FLUJO /LINEA Y BLOQUE</h3>
-          <P>- Display: la propiedad CSS display (display:) especifica si un elemento es tratado como block (espera ocupar todo el
-            espacio de su linea) o inline elelement (ej: img, solo ocupa s espacio fisica en la linea. Si pongo una imagen y
-            enseguida en la linea otra, se pondran una al lado de la otra.) y el diseño usado por sus hijos, como flor layut
-            (diseño de flujo ) flex (flexible) o grid (cuadricula). </P>
-          <p>- Flow: Es el flujo ntural de nuestro navegador. obedece a la configuración del witing-mode y direction, ambas sn
-            propiedades de CSS con un valor por defect. El writing mode es Horizontal-tb: Se lee en horizontal (algunos idiomes se
-            escriben y leen en vertical) y "t"-"b" significa top-bottom de arriba hacia abajo. Direction: ltr, ltr significa left
-            to right (de derecha a izquierda, el arabe por ejemplo, seria de izq a der.) </p>
-
-            <p>Existen dos etiquetas para añadir codigo a una pagina</p>
 
        <h3>Shortcuts</h3>
            <p>Ctrl+n: Nuevo archivo</p>
            <p>cttl+shift+d: multiplica las lineas de texto seleccionadas</p>
            <p>lorem. Te genera automaticamente un texto de prueba (usado por antiguos programadores)</p>
            <p>alt+tabulador: eñimina los espacios y mueve el texto hacia la izquierda</p>
+           <p>ctrl+ click en enlace: abre la pagina directamente. Tambien la pagina de CSS dentro de VSC. </p>
          <hr>
     <h2 id="css">5. QUE ES CSS?</h2>
         <p>CSS Cascading Style Sheets es el lenguaje de estilos utilizado para describir la presentacion de documentos HTML. Podemos incluir CSS u hojas de estilo en HTML de  formas: </p>
@@ -121,7 +106,7 @@
             <p>Reglas de CSS: </p>
             <p>Una regla es la forma en la que se estructura para poner un tipo de estilo. Se compone de un selector (o varios
             separados por ,), una propiedad (o varias) y un valor.</p>
-      <h3>Selectores</h3>
+      <h3>SELECTORES</h3>
       <p>Los selectores definen sobre que conjunto de elementos se aplicará un conjunto de reglas CSS</p>
           <h4>Basicos: </h4>
             <p>- *global: selectores universales o globales (l). Afecta a todos los elementos</p>
@@ -138,6 +123,30 @@
           <h4>Pseudoselectores: Son estados que solo pueden pasarle a un elemento. </h4>
             <p>- :Pseudoclase:Representan estados en un elemnto. Ej: cambiar de color un link ya visitado o pcambiar de color al pasar el mouse encima de un link. </p>
             <p>- ::pseudoelemento: Crean elemntos especiales que no se pueden crear con HTML, agraga algo de contenido. </p>
+      <h3>User Agent Styles</h3>
+              <p>Cualquier navegador tiene estilos por defecto, esto quiere decir que vienen ya en el navegador, no subimos nosotros esa hoja de estilos, pero existen en alguna parte de HTML. Por esto todos los elementos de HTML se ven ligeramente diferentes, por lo menos los de contenido (parrafos y codigos). Lo vemos al inspeccionarlos. Esto ayuda a que nuestro docuemnto, aun sin nada de css tenga cierta lecturabilidad. Cuando empezo internet, solo exiatia hTML y por esto se hacia esto </p>
+      <h3>CASCADA, ESPECIFICIDAD y HERENCIA</h3>
+        <p>Cascada: Como su nombre indica CSS Cascade style sheet, CSS seleede arriba hacia abajo y lo que venga despues sobreescribe lo anterior, si una segunda regla con el mismo selector declara la misma propiedad, esta segunda sobreescribira la primera.  </p>
+        <p>Especificidad:Cuando hay coincidencia de elementos se aplica la cascada y tambien la relevancia que tenga ese selector. ej: Class es mayor que Tag. Existe una propiedd que se puede añadir llamada "important" te sobreescribe cualquier cosa, pero no debe ser usado a la ligera, solo debe usarse si es estrictamente necesario. </p>
+        <p>Herencia: Existen propiedades de CSS que se heredan</p>
+      <h3>CONTENT-COMPONENT-LAYOUT</h3>
+        <P>- Contenido: cada uno de los elementos de la pagina (los detalles, ej: una imagen, un boton, un texto)</P>
+        <p>- Componente: Es un conjunto de elementos, ej: un menu, una lista. </p>
+        <p>- Layout: es la interfaz. un conjunto de componentes</p>
+      <h3>DISPLAY /FLUJO /LINEA Y BLOQUE</h3>
+        <P>- Display: la propiedad CSS display (display:) especifica si un elemento es tratado como block (espera ocupar todo el
+          espacio de su linea) o inline elelement (ej: img, solo ocupa s espacio fisica en la linea. Si pongo una imagen y
+          enseguida en la linea otra, se pondran una al lado de la otra.) y el diseño usado por sus hijos, como flor layut
+          (diseño de flujo ) flex (flexible) o grid (cuadricula). </P>
+        <p>- Flow: Es el flujo ntural de nuestro navegador. obedece a la configuración del witing-mode y direction, ambas sn
+          propiedades de CSS con un valor por defect. El writing mode es Horizontal-tb: Se lee en horizontal (algunos idiomes se
+          escriben y leen en vertical) y "t"-"b" significa top-bottom de arriba hacia abajo. Direction: ltr, ltr significa left
+          to right (de derecha a izquierda, el arabe por ejemplo, seria de izq a der.) </p>
+          <hr>
+      <h3>CSS para contenido:</h3>
+      <h3>COLORES</h3>
+        <p>Es una propiedad. Un color puede ser descrito como palabra clave, hexadecimal(representado por # y por numeros del 0 al 6, son 3 grupos de numeros, cada grupo de dos numeros representa a uno de los colores primarios, estos van de 0 a 9 y despues empiezan a representarse en letras), rgb(a) y hls(a)</p>
+
 
 
 
