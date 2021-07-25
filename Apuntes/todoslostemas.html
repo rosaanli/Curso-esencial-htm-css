@@ -96,6 +96,7 @@
            <p>lorem. Te genera automaticamente un texto de prueba (usado por antiguos programadores)</p>
            <p>alt+tabulador: eñimina los espacios y mueve el texto hacia la izquierda</p>
            <p>ctrl+ click en enlace: abre la pagina directamente. Tambien la pagina de CSS dentro de VSC. </p>
+           <p>ctrl+*: Comentar o descomentar una o varias lineas. Tambien /* lines */</p>
          <hr>
     <h2 id="css">5. QUE ES CSS?</h2>
         <p>CSS Cascading Style Sheets es el lenguaje de estilos utilizado para describir la presentacion de documentos HTML. Podemos incluir CSS u hojas de estilo en HTML de  formas: </p>
@@ -145,7 +146,13 @@
           <hr>
       <h3>CSS para contenido:</h3>
       <h3>COLORES</h3>
-        <p>Es una propiedad. Un color puede ser descrito como palabra clave, hexadecimal(representado por # y por numeros del 0 al 6, son 3 grupos de numeros, cada grupo de dos numeros representa a uno de los colores primarios, estos van de 0 a 9 y despues empiezan a representarse en letras), rgb(a) y hls(a)</p>
+        <p>Es una propiedad. Un color puede ser descrito como palabra clave, hexadecimal(representado por # y por numeros del 0 al 6, son 3 grupos de numeros, cada grupo de dos numeros representa a uno de los colores primarios, estos van de 0 a 9 y despues empiezan a representarse en letras), rgb(es una funcion de CSS, los valores van de 0 a 255. RGB se suele utilizar cuando se quiere expresar algo con el canal alfa, que da transparencia) y hls(a)</p>
+      <h3>VALORES Y UNIDADES</h3>
+      Ecisten valores o unidades relativas o absolutas. Por ejemplo ancho y alto, puedo dar un valor absoluto y siempre tendra el mismo valor o dar una unidad relaviva coomo el VW (viewport) que lo que representa es un porcentaje de la pantlla y tendra siempre el mismo porcentaje, si diminuyes el tamaño de la pagina, tambien disminuira el tamaño del objeto seleccionado.
+      <p>- Pixel: La manera más conocida  para representar tamaños de objetos en CSS es mediante pixels. Pixel es la unidad minima de información visible que se puede tener en la pantalla. Hay valores absolutos y relativos para interpretar valores (por ejemplo el tamaño de letra se puede representar en EM), los pixels son unidades absolutas.  </p>
+      <p>- em: Es una unidad relativa. Es igual al valor de fuente  mas cercano del selector que estas ocupando. Va en herencia, toma el valor del padre mas cercano.  </p>
+      <p>- rem:  Es una unidad relativa. Siempre va a tomar el valor o tamaño del elemento que este mas cerca al RUT de nuestro  documento. </p>
+
 
 
 

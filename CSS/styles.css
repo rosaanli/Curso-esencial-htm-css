@@ -1,6 +1,36 @@
+html{
+font: size 16px;
+}
+
 body {
   color: #212121;
 }
 a {
   color: #212121;
 }
+header{
+  font: size 14px;
+  color: #616161;
+}
+header a{
+  color:#616161;
+  text-decoration: none;
+}
+header a:hover{
+  color: #212121;
+}
+
+nav details summary {
+  Font-weight: bold;
+}
+
+h1 {
+  font-size:60px
+}
+
+h2{
+  font-size:  2em;
+}
+
+h3{
+  font-size: 1.5em;
